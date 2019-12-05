@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <script defer src="face-api.min.js"></script> -->
+  <script defer src="face-api.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="dist/tween.umd.js"></script>
+  <script src="https://threejs.org/build/three.min.js"></script>
+  <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/three@0.87.1/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="node_modules/postprocessing/build/postprocessing.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script defer src="script.js"></script>
+    <div id="partA">
+        <div id="A_1">
+            <div>
+            FINGER IS THE NEW LEG
+            </div>
+            <button id="entranceBtn">Go</button>
+        </div>
+
+        <div id="A_2">
+            Select a play mode
+            <button id='soloBtn'>Solo</button>
+            <button id="groupBtn">Group</button>
+        </div>
+
+        <div id="A_3">
+            Would you like to reate or join a room?
+            <button id='createNewRoomBtn'>Create a new room</button>
+            <button id="joinRoomBtn">Join an existing room</button>
+        </div>
+
+        <div id="A_4_1">
+            <div>A new room is created!</div>
+            <h1 id='myRoomName'>LoL</h1>
+            <!-- <img id=“copyBtn” src="assets/copy.png"> -->
+            <button id="copyBtn">Copy to share</button>
+            <button id="enterRoomBtn1">Enter</button>
+        </div>
+
+        <div id="A_4_2">
+            Join an existing room
+            <input type='text' id="inputRoomName"></input>
+            <button id="enterRoomBtn2">Enter</button>
+        </div>
+
+
+    </div>
+
+    <div id="partB">
+        <div id="info">
+                <h1>FINGER IS THE NEW LEG</h1>
+                <h3 id="roomTitle">haha</h3>
+                <h5>Click anywhere to run</h5>
+                <h5>Control your speed with your emotion</h5>
+                <p>Neutral: Normal</p>
+                <p>Happy: Slow</p>
+                <p>Angry: Fast</p>
+                <p>You can also try other emotions!</p>
+                <button id="alsoCopy">Copy to share</button>
+                <button id="sendHi">Send Hi to Others in this room</button>
+
+            </div>
+
+            <!-- <button class="btn btn-2 btn-2i" id="readyReady"> Ready! </button> -->
+
+            <div class="player">
+                <video id="video" width="320" height="240" autoplay muted></video>
+                <p id="emotionState"></p>
+            </div>
+
+            <div id="content"></div>
+
+            <div id = "instruction">
+                <button id = "readyBtn">Ready</button>
+                <!-- <button id="runBtn"> RUN </button> -->
+                <div id="notes"></div>
+            </div>
+
+            <div id="ending">
+                <h1 class="title">Check out these runners!</h1>
+                <div class="container">
+
+                    <div class="col" id="winner1">
+                        <image class="grid-item image" id="image1" src="placeholder.jpg" />
+                        <div class="grid-item award" id="award1">haha</div>
+                    </div>
+
+                    <div class="col" id="winner2">
+                        <image class="grid-item image" id="image2" src="placeholder.jpg" />
+                        <div class="grid-item award" id="award2">haha</div>
+                    </div>
+
+                    <div class="col" id="winner3">
+                        <image class="grid-item image" id="image3" src="placeholder.jpg" />
+                        <div class="grid-item award" id="award3">haha</div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+
+
+</body>
+
+</html>
