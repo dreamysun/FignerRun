@@ -89,6 +89,8 @@ entranceBtn.addEventListener("click", function(){
   pageA_2.style.display = 'block';
 });
 
+
+
 //Choose group mode
 groupBtn.addEventListener("click", function(){
   pageA_2.style.display = 'none';

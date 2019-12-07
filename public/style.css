@@ -17,14 +17,18 @@ body {
 
   #partA {
     display:block;
+
+    background: #B66F45;
   }
-  
+
   #A_2,#A_3,#A_4_1, #A_4_2{
     display: none;
+
   }
 
   #partB{
     display: none;
+  
   }
 
   canvas {
@@ -44,7 +48,7 @@ body {
     text-align: left;
     z-index: 100;
     display:block;
-    
+
   }
 
   #video {
@@ -137,7 +141,7 @@ body {
 
   .image{
     border-radius: 30px;
-    
+
     /* float:left;
     margin-left:20px;
     margin-top:20px; */
@@ -157,7 +161,7 @@ body {
     font-weight: normal;
     font-style: normal;
   }
-  
+
   /* General button style (reset) */
   .btn {
     border: none;
@@ -179,7 +183,7 @@ body {
     transition: all 0.3s;
     z-index: 100;
   }
-  
+
   /* Button 2 */
   .btn-2 {
     background: #cb4e4e;
@@ -189,7 +193,7 @@ body {
     -moz-transition: none;
     transition: none;
   }
-  
+
   .btn:after {
     content: '';
     position: absolute;
@@ -206,13 +210,13 @@ body {
     padding: 0;
     position: absolute;
   }
-  
+
   .btn-2i:hover {
     box-shadow: 0 4px #ab3c3c;
     /* top: 2px; */
   }
-  
+
   .btn-2i:active {
     box-shadow: 0 0 #ab3c3c;
     /* top: 6px; */
-  } */
+  }
